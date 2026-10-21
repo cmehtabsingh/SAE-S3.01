@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paris Zalmi</title>
+    <link rel="icon" href="Paris_Zalmi_logo.jpg" type="image/jpg">
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="inscription.html">Nous rejoindre</a></li>
+            <li><a href="equipes.html">Nos équipes</a></li>
+            <li><a href="">Prochain matchs</a></li>
+           <li><a href="">Contact</a></li>
+           <li><a href="scoresheet.html">Feuille de matchs entraînement</a></li>
+        </ul>
+    </nav>
+    <h1>Paris Zalmi</h1>
+
+    <main class="formulaire">
+
+        <p>Pour nous rejoindre, veuillez remplir le formulaire ci-dessous. Le club vous recontactera rapidement.</p>
+        
+        <form action="inscription_formulaire.php" method="get">
+
+            <label for="title">Civilité :</label>
+
+            <label for="H">Homme</label>
+            <input type="radio" id="H" value="H" name="civilité">
+
+            <label for="F">Femme</label>
+            <input type="radio" id="F" value="F" name="civilité"><br>
+
+            <label for="lname">Nom :</label>
+            <input type="text" id="lname" name="Nom" placeholder="Nom de famille" required><br>
+
+            <label for="fname">Prénom :</label>
+            <input type="text" id="fname" name="Prenom" placeholder="Prénom" required><br>
+
+            <label for="email">Email : </label>
+            <input type="email" id="email" name="Email" placeholder="pariszalmi@gmail.com" required><br>
+
+            <label for="phone">Tél : </label>
+            <input type="tel" id="phone" name="Phone" required><br>
+
+            <label for="bday">Date de naissance</label>
+            <input type="date" id="bday" name="birthdate" required><br>
+
+            <label for="role">Rôle</label>
+            <select id="role">
+
+                <option value="Batting">Batting</option>
+                <option value="Bowling">Bowling</option>
+                <option value="All Rounder">All Rounder</option>
+                <option value="Wicket-Keeper">Wicket-Keeper</option>
+
+            </select><br>
+
+            <label for="contacturgence">Personne à contacter en cas d'urgence : </label>
+            <input type="text" id="contacturgence" name="nameurgentcasecontact" placeholder="Nom" required><br>
+            
+            <label for="contact_tel">Numéro du contact d'urgence : </label>
+            <input type="tel" id="contact_tel" placeholder="Numéro" required><br>
+
+            <input type="submit">
+            
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
